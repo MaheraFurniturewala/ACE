@@ -8,3 +8,16 @@ window.onload = function(){
     editor.setTheme("ace/theme/monokai");
     editor.session.setMode("ace/mode/c_cpp");
 }
+
+//configure editor mode whenever language will be  changed from the dropdown
+// from onchange attribute in dropdown
+function changeLanguage(){
+    let language = $("#languages").val();
+
+    if(language == 'c' || language == 'cpp'){editor.session.setMode("ace/mode/c_cpp");}
+    else if(language == 'python'){editor.session.setMode("ace/mode/python");}
+    else if(language == 'java'){editor.session.setMode("ace/mode/java");}
+    else if(language == 'ruby'){editor.session.setMode("ace/mode/ruby");}
+    else if(language == 'kotlin'){editor.session.setMode("ace/mode/kotlin");}
+    else if(language == 'swift'){editor.session.setMode("ace/mode/swift");}
+}
