@@ -22,7 +22,7 @@
     border: 1px solid gray;
 }
 
-#editor { height: 400px; }
+#editor { height: 520px; }
 
 .button-container {
     text-align: right;
@@ -37,10 +37,12 @@
 }
 
 .output {
-        padding: 4px;
-        border: 2px solid gray;
-        min-height: 100px;
-        width: 99%;
-        resize: none;
+    position:absolute;
+    bottom:5px;
+    padding: 4px;
+    border: 2px solid gray;
+    min-height: 100px;
+    width: 99%;
+    resize: none;
 
 }
